@@ -1,7 +1,7 @@
 **About this repository**
 
 This is a project with a gole of understanding the role of (different) entropy fluctuations in the emergence of organized patterns in Conway's Game of Life.  
-Credit to Adrian Chifor for [game_of_life.py](https://github.com/adrianchifor/conway-game-of-life/blob/master/game_of_life.py)code that I've used here.
+Credit to Adrian Chifor for [game_of_life.py](https://github.com/adrianchifor/conway-game-of-life/blob/master/game_of_life.py) code that has been used for this project.
 
 * [entropy_game_of_life.py](https://github.com/danafaiez/Game-of-Life/blob/master/entropy_game_of_life.py): 
 This code computes Boltzmann entropy with different macrostates: 
