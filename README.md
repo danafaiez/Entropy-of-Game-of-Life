@@ -1,23 +1,16 @@
 **About this repository**
 
+This is a project with a gole of understanding the role of (different) entropy fluctuations in the emergence of organized patterns in Conway's Game of Life.  
+Credit to Adrian Chifor for [game_of_life.py](https://github.com/adrianchifor/conway-game-of-life/blob/master/game_of_life.py)code that I've used here.
 
+* [entropy_game_of_life.py](https://github.com/danafaiez/Game-of-Life/blob/master/entropy_game_of_life.py): 
+This code computes Boltzmann entropy with different macrostates: 
+1. population: this macrostate is based on the number of live cells in every dxd box.  
+2. Edges: this macrostate is based on the number of edges in every dxd box; i.e. the edge between any live cell and dead cell. 
+This quantifies the "interestig" patterns that emerge in GOL, within a given resolution of size dxd.
 
-This repository includes multiple optimization codes:
+* [d4_Ehalf.py](https://github.com/danafaiez/Game-of-Life/blob/master/d4_Ehalf.py):
+This code includes the volume matrix that corresponds to a box of size 4x4. The entries of this matrix are the volume
+(size of the microstate corresponding to a given macrostate (population and edge)). The sum of the volumes in a given coloum
+result in the volume for population macrostate, and the sum of the volumes in a given row result in the volume for edge macrostate.
 
-* [min.c](https://github.com/danafaiez/optimization-/blob/test/min.c) includes a minimization process using GSL library which minimizes the
-observational entropy with position and energy coarse graining, S_EX, with respect to the phase factor phi = E_{i}t.
-It also includes minimization of the entanglement entropy, S_ent, between two partitions of the system, with respect to the phase factor phi = E_{i}t.
-The expectation value of the number operator, is also calculated at the end of this optimization process.
-
-
-* [max_region_prob.c](https://github.com/danafaiez/optimization-/blob/test/max_region_prob.c) maximizes the probability that the wavefunction in localized
-within specific lattice sites. This optimization is done using GSL library and the maximization is with respect
-to the phase factor phi = E_{i}t. The expectation value of the number operator, is also calculated at the end of this optimization process.
-
-
-* [S_min_minimum.c](https://github.com/danafaiez/optimization-/blob/test/S_min_minimum.c) is a minimization process
-similar to min_S_EX of S_EX, but with a starting phase that corresponds to a local minimum (calculated from doing a minimization).
-
-**Current bugs**
-
-[S_min_minimum.c](https://github.com/danafaiez/optimization-/blob/test/S_min_minimum.c) currently has some bugs that I ahven't been able to resolve.
